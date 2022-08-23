@@ -1,0 +1,47 @@
+<html>
+<head>
+ <title>Contact</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li style="float:right"><a class="active" href="assets/Tugas Personal Branding.pdf" target="_blank">Download CV</a></li>
+    </ul>
+    
+    
+        <fieldset style="height: 80%;">
+            <legend style="font-size: x-large;">Contact Me</legend>
+            <span class="error">* required field</span><br><br>
+            <form method="post" action="/action">
+                Name: <input type="text" name="name">
+                <span class="error">* <?php echo $nameErr;?></span>
+                <br><br>
+                E-mail: <input type="text" name="email">
+                <span class="error">* <?php echo $emailErr;?></span>
+                <br><br>
+                Website: <input type="text" name="website">
+                <span class="error"><?php echo $websiteErr;?></span>
+                <br><br>
+                Comment:<br> <textarea name="comment" rows="5" cols="40"></textarea>
+                <br><br>
+                Gender:
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="other">Other
+                <span class="error">* <?php echo $genderErr;?></span>
+                <br><br>
+                <input type="submit" name="submit" value="Submit">  
+            </form>
+        </fieldset>
+   
+    <footer>
+        <hr>
+        <section align="center">
+            <p>&copy;copyright Lorem.</p>
+        </section>
+    </footer>
+</body>
+</html>
